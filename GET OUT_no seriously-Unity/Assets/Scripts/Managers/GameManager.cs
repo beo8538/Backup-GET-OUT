@@ -206,6 +206,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Gameover");
     }
     
+    public void LoadNextLevel(int x) //x is number of levels in the game
+    {
+        SceneManager.LoadScene(x);
+    }
     
     //GO TO THE NEXT LEVEL
         void NextLevel()
