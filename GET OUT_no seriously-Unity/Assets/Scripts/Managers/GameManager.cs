@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     [Header("GAME SETTINGS")]
 
-    [Tooltip("Will the high score be recoreded")]
+    [Tooltip("Will the high score be recorded")]
     public bool recordHighScore = false; //is the High Score recorded
 
     [SerializeField] //Access to private variables in editor
