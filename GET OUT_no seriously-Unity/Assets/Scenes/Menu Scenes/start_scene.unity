@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Text: 'INSTRUCTIONS
 
     Use WASD to move and the mouse to look around. Search
-    each room by clicking on different objects. Certain objects might hold clues
+    each room and grab different objects with E. Certain objects might hold clues
     in escaping the facility. Good luck.'
 --- !u!222 &659638181
 CanvasRenderer:

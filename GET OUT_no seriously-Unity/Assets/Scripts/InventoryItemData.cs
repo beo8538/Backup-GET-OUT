@@ -12,11 +12,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Inventory Item Data")]
+[CreateAssetMenu(menuName = "Inventory Item Data")] //creates option to create this in menu
 
 public class InventoryItemData : ScriptableObject
 {
-    public string displayName;
+    public string displayName; //name
     public Sprite icon; //icon of item
-    public GameObject prefab;
+    public GameObject prefab; //grab item's prefab
 }
