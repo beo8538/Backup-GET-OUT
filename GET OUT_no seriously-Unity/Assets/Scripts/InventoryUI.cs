@@ -14,10 +14,10 @@ public class InventoryUI : MonoBehaviour
     //initialize things here
     void Start()
     {
-        inventory = Inventory.instance;
+        inventory = Inventory.instance; //calls back to singleton
         inventory.onItemChangedCallback += UpdateUI;
 
-        slots = itemsParent.GetComponentsInChildren<InventorySlot>(); 
+        slots = itemsParent.GetComponentsInChildren<InventorySlot>(); //gets all the componets of children
     }
 
     // Update is called once per frame
@@ -30,12 +30,16 @@ public class InventoryUI : MonoBehaviour
     void UpdateUI()
     {
         Debug.Log("Updating UI");
+
+        //for loop to loop through all slots
         for(int i = 0; i < slots.Length; i++)
         {
+            //if there are more items to add
             if( i < inventory.items.Count)
             {
-                slots[i].AddItem(invetory.items[i]);
+                slots[i].AddItem(inventory.items[i]);
             }
+            //if we don't have anymore items or enough items to add
             else
             {
                 slots[i].ClearSlot();
