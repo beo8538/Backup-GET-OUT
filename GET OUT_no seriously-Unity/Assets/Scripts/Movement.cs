@@ -27,6 +27,7 @@ public class Movement : MonoBehaviour
 
     Vector2 currDirection = Vector2.zero; //stores current direction of player
     Vector2 currDirVelocity = Vector2.zero; //stores the velocity of current direction
+
     Vector2 currMouseDelta = Vector2.zero;
     Vector2 currMouseDeltaVelocity = Vector2.zero; //speed mouse
 
@@ -37,8 +38,9 @@ public class Movement : MonoBehaviour
         if (cursorLock)
         {
             Cursor.lockState = CursorLockMode.Locked; //locks cursor
-            //Cursor.visible = false;
+            Cursor.visible = false;
         }
+        
     }
 
     // Update is called once per frame
@@ -47,6 +49,8 @@ public class Movement : MonoBehaviour
         UpdateMouseLook(); //method for movement of camera with mouse
         UpdateMovement(); //method that moves player (WASD)
     }
+
+
 
     void UpdateMouseLook()
     {

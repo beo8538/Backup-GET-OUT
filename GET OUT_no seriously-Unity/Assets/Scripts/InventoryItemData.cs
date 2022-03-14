@@ -16,7 +16,6 @@ using UnityEngine;
 
 public class InventoryItemData : ScriptableObject
 {
-    public string ID; //ID of item to reference
     public string displayName;
     public Sprite icon; //icon of item
     public GameObject prefab;

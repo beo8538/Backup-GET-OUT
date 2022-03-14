@@ -6,6 +6,12 @@ TagManager:
   tags:
   - ComputerScreen
   - computer
+  - safeClosed
+  - safeOpen
+  - key
+  - floppy
+  - keycard
+  - boxDoor
   layers:
   - Default
   - TransparentFX
